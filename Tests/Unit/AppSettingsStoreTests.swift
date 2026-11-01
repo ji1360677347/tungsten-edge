@@ -818,26 +818,26 @@ final class AppSettingsStoreTests: XCTestCase {
     func testEdgeSectionTitleMentionsShortcutOnlyWhenRegistered() {
         XCTAssertEqual(
             AutoHideToggleMenuModel.edgeSectionTitle(isHotKeyRegistered: true, glyphs: "⌥⇧⌘D"),
-            String(format: String(localized: "Tungsten Edge (%@ to show/hide)"), "⌥⇧⌘D")
+            String(format: String(localized: "iBar (%@ to show/hide)"), "⌥⇧⌘D")
         )
         XCTAssertEqual(
             AutoHideToggleMenuModel.edgeSectionTitle(isHotKeyRegistered: true, glyphs: "⌃⌘K"),
-            String(format: String(localized: "Tungsten Edge (%@ to show/hide)"), "⌃⌘K")
+            String(format: String(localized: "iBar (%@ to show/hide)"), "⌃⌘K")
         )
         XCTAssertEqual(
             AutoHideToggleMenuModel.edgeSectionTitle(isHotKeyRegistered: false, glyphs: "⌃⌘K"),
-            String(localized: "Tungsten Edge"),
+            String(localized: "iBar"),
             "注册失败时不提任何组合"
         )
     }
 
     @MainActor
     func testEdgeSliderIsCompactAndKeepsAccessibilityContext() {
-        let view = PreferenceSliderMenuItemView(accessibilityTitle: "Tungsten Edge 钨极唤醒时间")
+        let view = PreferenceSliderMenuItemView(accessibilityTitle: "iBar 钨极唤醒时间")
         view.sync(delay: 0.5)
 
         XCTAssertEqual(view.frame.height, 58)
-        XCTAssertEqual(view.accessibilityLabel(), "Tungsten Edge 钨极唤醒时间，0.5s")
+        XCTAssertEqual(view.accessibilityLabel(), "iBar 钨极唤醒时间，0.5s")
         XCTAssertEqual(view.accessibilityValue() as? String, "0.5s")
     }
 

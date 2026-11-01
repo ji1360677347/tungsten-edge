@@ -106,7 +106,7 @@ struct MultipartFormBody {
     let boundary: String
     private var body = Data()
 
-    init(boundary: String = "TungstenEdge-\(UUID().uuidString)") {
+    init(boundary: String = "iBar-\(UUID().uuidString)") {
         self.boundary = boundary
     }
 

@@ -45,7 +45,7 @@ enum FeedbackCategory: String, CaseIterable {
         case .bug:
             return String(localized: "What went wrong? What did you do when it happened? Paste any details that might help.")
         case .suggestion:
-            return String(localized: "What should Tungsten Edge add or improve? Tell us how you'd use it.")
+            return String(localized: "What should iBar add or improve? Tell us how you'd use it.")
         case .other:
             return String(localized: "Anything you want to say — write it here.")
         }

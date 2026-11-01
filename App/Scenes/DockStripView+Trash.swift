@@ -15,7 +15,7 @@ extension DockStripView {
                   onEmpty: { trashStore.emptyTrash() })
     }
 
-    /// A click opens the Trash popup — Tungsten Edge's own panel, so no Finder window is opened,
+    /// A click opens the Trash popup — iBar's own panel, so no Finder window is opened,
     /// closed or minimized by the click. Same anchoring as the shelf, on `trashFrame`.
     func trashChipTapped() {
         guard trashFrame != .zero, stripRootScreenRect != .zero else { return }

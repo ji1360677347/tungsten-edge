@@ -266,7 +266,7 @@ enum TrashWindowAbsorption {
 /// Paths inside a Trash: the user's `~/.Trash` or a volume root's `.Trashes`. Matched by whole path
 /// components, never by string prefix, and only strictly inside — the Trash folder itself is not
 /// an item. Such URLs never reach a taskbar drop target: the shelf would keep a reference into the
-/// Trash, and a pinned-folder move would need Full Disk Access, which Tungsten Edge does not have.
+/// Trash, and a pinned-folder move would need Full Disk Access, which iBar does not have.
 enum TrashPath {
     static func isInsideTrash(_ url: URL, homeDirectory: URL) -> Bool {
         guard url.isFileURL else { return false }

@@ -73,7 +73,7 @@ struct DiagnosticReport: Equatable {
     var text: String {
         let system = [systemVersion, hardwareModel].compactMap { $0 }.joined(separator: " · ")
         return [
-            "Tungsten Edge diagnostics",
+            "iBar diagnostics",
             "app: \(appVersion ?? "unknown")",
             "macOS: \(system)",
             "language: \(language)",

@@ -6,12 +6,12 @@ import os
 
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
-    /// Window titles for the guide windows follow the localized bundle name (`InfoPlist.xcstrings`):
-    /// only zh-Hans carries the 「钨极」 suffix, every other language shows plain "Tungsten Edge".
+    /// Window titles for the guide windows follow the localized bundle name (`InfoPlist.xcstrings`).
+    /// 分支后所有语言统一为 "iBar"：上游曾只在 zh-Hans 后面挂「钨极」后缀，那种分化在这里已取消。
     static var localizedDisplayName: String {
         (Bundle.main.localizedInfoDictionary?["CFBundleDisplayName"] as? String)
             ?? (Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String)
-            ?? "Tungsten Edge"
+            ?? "iBar"
     }
 
     /// Must be the **first** stored property: every other store writes defaults inside its own

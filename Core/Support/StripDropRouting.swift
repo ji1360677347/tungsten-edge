@@ -176,7 +176,7 @@ extension StripDropRouting {
     }
 
     /// Whether the strip answers a drag with the generic operation (no cursor badge) instead of
-    /// SwiftUI's `.copy` (the green plus). Over the Trash, where Tungsten Edge moves the file
+    /// SwiftUI's `.copy` (the green plus). Over the Trash, where iBar moves the file
     /// itself, and over a pin slot while a folder is dragged, where nothing is copied at all:
     /// `.copy` reads as "a copy goes in", and `.move` is never an option — it tells the source
     /// the item left, and Finder deletes an app it dragged in. A source that does not offer generic

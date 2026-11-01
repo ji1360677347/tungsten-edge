@@ -245,7 +245,7 @@ struct SettingsWindowContent: View {
     }
 
     private var fullscreenIntentNote: String {
-        String(localized: "To keep the taskbar from flashing when you switch into full screen, Tungsten Edge has to hide it before your input reaches the app. It therefore watches global left-clicks, key presses and trackpad gestures, and recognizes only four of them: the window’s green button, Control-Command-F, Control-Left/Right arrow, and a three-finger horizontal swipe. What you type is never recorded, logged, or sent anywhere. Turning this off disables the watching completely.")
+        String(localized: "To keep the taskbar from flashing when you switch into full screen, iBar has to hide it before your input reaches the app. It therefore watches global left-clicks, key presses and trackpad gestures, and recognizes only four of them: the window’s green button, Control-Command-F, Control-Left/Right arrow, and a three-finger horizontal swipe. What you type is never recorded, logged, or sent anywhere. Turning this off disables the watching completely.")
     }
 
     @ViewBuilder
@@ -352,7 +352,7 @@ struct SettingsWindowContent: View {
     private var diagnosticsControls: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Diagnostic Report")
-            Text("The windows, permissions and settings Tungsten Edge currently sees. Your home directory is shown as ~.")
+            Text("The windows, permissions and settings iBar currently sees. Your home directory is shown as ~.")
                 .font(.caption).foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
         }
@@ -464,8 +464,8 @@ struct SettingsWindowContent: View {
         guard option != previous else { return }
         presentedAlert = SettingsAlert(
             title: String(localized: "Language"),
-            message: String(localized: "The language change takes effect after Tungsten Edge restarts."),
-            actionTitle: String(localized: "Restart Tungsten Edge"),
+            message: String(localized: "The language change takes effect after iBar restarts."),
+            actionTitle: String(localized: "Restart iBar"),
             action: { Self.relaunch() }
         )
     }
@@ -556,7 +556,7 @@ struct SettingsWindowContent: View {
     }
 
     private var scrollReverserHelp: String {
-        String(localized: "Flips mouse-wheel scrolling system-wide, like Scroll Reverser. Trackpads and Magic Mouse are not affected. Tungsten Edge only inverts the direction values of scroll-wheel events; nothing is recorded or sent anywhere. If Scroll Reverser or Mos is also running, the two cancel out — keep only one.")
+        String(localized: "Flips mouse-wheel scrolling system-wide, like Scroll Reverser. Trackpads and Magic Mouse are not affected. iBar only inverts the direction values of scroll-wheel events; nothing is recorded or sent anywhere. If Scroll Reverser or Mos is also running, the two cancel out — keep only one.")
     }
 
     /// 重开首次引导（那扇写系统 Dock 推荐设置的窗）。2026-09-01 从状态栏菜单搬来
@@ -627,7 +627,7 @@ struct SettingsWindowContent: View {
                     }
                 }
                 // 发放开始后它退回配角（输入框才是主角），所以字号跟着开关走。
-                Text("Licensing opens with version 1.0. Tungsten Edge is completely free until then, and founding users who have confirmed their email will receive a permanent free license key.")
+                Text("Licensing opens with version 1.0. iBar is completely free until then, and founding users who have confirmed their email will receive a permanent free license key.")
                     .font(LicenseStore.isIssuingLicenses ? .caption : .callout)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -912,7 +912,7 @@ struct SettingsWindowContent: View {
         Button {
             NSWorkspace.shared.open(SettingsWindowView.repositoryURL)
         } label: {
-            Text("Star Tungsten Edge on GitHub — a free way to help it get better.")
+            Text("Star iBar on GitHub — a free way to help it get better.")
         }
         .buttonStyle(.link)
         .font(.caption)
