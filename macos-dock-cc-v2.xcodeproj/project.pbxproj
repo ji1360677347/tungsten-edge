@@ -92,7 +92,6 @@
 		E90000000000000000001005 /* FilePathNormalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90000000000000000000005 /* FilePathNormalization.swift */; };
 		E90000000000000000002005 /* FilePathNormalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90000000000000000000005 /* FilePathNormalization.swift */; };
 		B77000000000000000000001 /* SparkleUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77000000000000000000003 /* SparkleUpdateService.swift */; };
-		B76000000000000000000003 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B76000000000000000000002 /* Sparkle */; };
 		D20000000000000000000000 /* CarrierSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000000 /* CarrierSnapshot.swift */; };
 		D20000000000000000000005 /* CarrierSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000000 /* CarrierSnapshot.swift */; };
 		D20000000000000000000007 /* DragCarrierGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000005 /* DragCarrierGeometry.swift */; };
@@ -958,7 +957,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B76000000000000000000003 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,7 +1621,6 @@
 			);
 			name = "macos-dock-cc-v2";
 			packageProductDependencies = (
-				B76000000000000000000002 /* Sparkle */,
 			);
 			productName = "macos-dock-cc-v2";
 			productReference = A00000000000000000000018 /* macos-dock-cc-v2.app */;
@@ -1709,7 +1706,6 @@
 			mainGroup = A0000000000000000000001C;
 			productRefGroup = A00000000000000000000023 /* Products */;
 			packageReferences = (
-				B76000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -2406,8 +2402,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.18.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar;
+				PRODUCT_NAME = iBar;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
@@ -2429,8 +2425,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.18.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar;
+				PRODUCT_NAME = iBar;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
@@ -2443,7 +2439,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 57;
 				MARKETING_VERSION = 0.18.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2.windowlab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar.windowlab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
@@ -2456,7 +2452,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CURRENT_PROJECT_VERSION = 57;
 				MARKETING_VERSION = 0.18.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2.windowlab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar.windowlab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -2476,7 +2472,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
@@ -2494,7 +2490,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.caye.macosdockcc.v2.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ji1360677347.ibar.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -2544,24 +2540,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		B76000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.9.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B76000000000000000000002 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B76000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0000000000000000000003F /* Project object */;
 }

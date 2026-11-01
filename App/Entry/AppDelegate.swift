@@ -55,7 +55,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var windowLiftAvoidanceController: WindowLiftAvoidanceController?
     private lazy var launchAtLoginService = LaunchAtLoginService()
     private lazy var nativeDockPreferencesService = NativeDockPreferencesService()
-    private let updateService = SparkleUpdateService()
+    private let updateService = UpdateService()
     private lazy var settingsCoordinator = SettingsCoordinator(
         store: settingsStore,
         launchAtLoginService: launchAtLoginService,
